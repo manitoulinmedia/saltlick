@@ -1,4 +1,4 @@
-// Saltlick static deployment — reviews and header alignment
+// Saltlick static deployment — interior pages
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "saltlick",
