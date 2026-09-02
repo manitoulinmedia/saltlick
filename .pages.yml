@@ -1,0 +1,54 @@
+media:
+  input: gallery
+  output: /gallery
+content:
+  - name: site
+    label: Website
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: logo, label: Logo, type: image }
+      - { name: hero_image, label: Hero image, type: image }
+      - { name: hero_eyebrow, label: Hero eyebrow, type: string }
+      - { name: hero_title, label: Hero headline, type: string }
+      - { name: hero_accent, label: Hero accent line, type: string }
+      - { name: hero_intro, label: Hero introduction, type: text }
+      - { name: story_heading, label: Story heading, type: string }
+      - { name: story_accent, label: Story accent, type: string }
+      - { name: story_paragraph_one, label: Story paragraph one, type: text }
+      - { name: story_paragraph_two, label: Story paragraph two, type: text }
+      - { name: family_image, label: Family-style image, type: image }
+      - { name: family_text, label: Family-style text, type: text }
+      - { name: catering_image, label: Catering image, type: image }
+      - { name: catering_heading, label: Catering heading, type: string }
+      - { name: catering_accent, label: Catering accent, type: string }
+      - { name: catering_text, label: Catering text, type: text }
+      - { name: menu_url, label: Menu URL, type: string }
+      - { name: order_url, label: Online ordering URL, type: string }
+      - { name: reserve_url, label: Reservation URL, type: string }
+      - { name: catering_email, label: Catering email, type: string }
+      - { name: address, label: Address, type: text }
+      - { name: map_url, label: Map URL, type: string }
+      - { name: hours, label: Hours, type: text }
+      - { name: phone, label: Telephone link, type: string }
+      - { name: phone_display, label: Telephone display, type: string }
+      - { name: instagram_url, label: Instagram URL, type: string }
+      - { name: facebook_url, label: Facebook URL, type: string }
+      - { name: footer_tagline, label: Footer tagline, type: string }
+      - name: featured_dishes
+        label: Featured dishes
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Image, type: image }
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: name, label: Dish name, type: string }
+          - { name: description, label: Description, type: text }
+      - name: gallery
+        label: Gallery
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Image, type: image }
+          - { name: alt, label: Image description, type: string }
