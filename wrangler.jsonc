@@ -1,4 +1,4 @@
-// Saltlick static deployment — interior pages
+// Saltlick static deployment — shared homepage footer
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "saltlick",
