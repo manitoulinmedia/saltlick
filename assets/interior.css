@@ -85,5 +85,4 @@ body.menu-page,body.catering-page,body.visit-page{background:var(--cream)}
   .visit-page .interior-hero-actions .button{width:100%;min-height:50px}
   .visit-page .map-copy>div:last-child{display:grid;grid-template-columns:1fr;width:100%}
   .visit-page .map-copy .button,.visit-page .map-copy .review-photo-link{width:100%;text-align:center}
-  .visit-page .visit-social a i{display:none}
 }
