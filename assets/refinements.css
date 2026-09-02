@@ -1,8 +1,11 @@
 /* Final Saltlick visual refinements — keep these rules last in the cascade. */
 
-/* Sticky header: navigation is centred on the actual black 82px bar, not the hanging logo. */
+/* Sticky header: a slightly slimmer bar with the navigation centred inside it. */
+.site-header{
+  height:76px;
+}
 .site-header .main-nav{
-  height:82px;
+  height:76px;
   align-self:center;
   align-items:center;
 }
@@ -11,6 +14,14 @@
   align-self:center;
 }
 .site-header .main-nav>a{
+  line-height:1;
+}
+.site-header .menu-nav-item{
+  height:76px;
+  display:flex;
+  align-items:center;
+}
+.site-header .menu-trigger{
   line-height:1;
 }
 .site-header .outline-button{
@@ -28,6 +39,9 @@
   top:auto;
   bottom:auto;
 }
+.mega-menu{
+  top:76px;
+}
 
 /* Hero headline: slightly smaller overall, with more authority on SOUTHERN SMOKE. */
 .hero h1{
@@ -41,10 +55,21 @@
   font-weight:600;
 }
 
-/* Use the current Southern Smokehouse mark for section watermarks. */
+/* Use the current Southern Smokehouse mark as a deliberately oversized watermark. */
 .story:before,
 .food:before{
   background-image:url('/gallery/saltlick-logo-2026.webp');
+  width:min(78vw,1050px);
+}
+.story:before{
+  left:-17%;
+  bottom:-38%;
+  opacity:.038;
+}
+.food:before{
+  right:-18%;
+  top:-16%;
+  opacity:.03;
 }
 
 /* Exceptional Catering is the footer — all restaurant details, brand and socials live on this image. */
@@ -147,9 +172,12 @@
 }
 
 @media(max-width:900px){
+  .site-header{height:72px}
   .site-header .main-nav{height:72px}
   .site-header .menu-nav-item{height:72px}
+  .mega-menu{top:72px}
   .hero h1{font-size:clamp(48px,11.2vw,76px)}
+  .story:before,.food:before{width:110vw}
   .catering-layout{min-height:0;padding:84px 40px 62px}
   .footer-base{
     grid-template-columns:92px 1fr;
@@ -163,6 +191,9 @@
 
 @media(max-width:620px){
   .hero h1{font-size:clamp(45px,12vw,64px)}
+  .story:before,.food:before{width:135vw}
+  .story:before{left:-36%;bottom:-24%}
+  .food:before{right:-44%;top:1%}
   .catering-layout{padding:72px 20px 50px}
   .catering-details-head{padding:16px 0 18px}
   .footer-base{
