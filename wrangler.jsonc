@@ -1,4 +1,4 @@
-// Saltlick static deployment — shared homepage footer
+// Saltlick static deployment — header menu spacing
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "saltlick",
