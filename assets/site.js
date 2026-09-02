@@ -25,6 +25,7 @@ fetch("/content/site.json")
     document.getElementById("gallery-grid").innerHTML = site.gallery.map((item, index) =>
       `<button class="gallery-item" type="button" data-index="${index}" aria-label="View ${item.alt}"><img src="${item.image}" alt="${item.alt}"><span>View story ↗</span></button>`).join("");
     setupGallery(site.gallery);
+    setupMegaMenuImages(site);
   })
   .catch(() => document.documentElement.classList.add("content-fallback"));
 
@@ -51,6 +52,37 @@ if (menuTrigger && megaMenu) {
     }
   });
   megaMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+}
+
+function setupMegaMenuImages(site) {
+  const image = document.getElementById("mega-menu-image");
+  const title = document.getElementById("mega-menu-title");
+  if (!image || !title) return;
+  document.querySelectorAll("[data-menu-image]").forEach((link) => {
+    const showCategory = () => {
+      const nextImage = site[link.dataset.menuImage];
+      if (nextImage && image.src !== new URL(nextImage, location.href).href) {
+        image.classList.add("is-changing");
+        window.setTimeout(() => {
+          image.src = nextImage;
+          image.alt = link.dataset.menuTitle;
+          title.textContent = link.dataset.menuTitle;
+          image.classList.remove("is-changing");
+        }, 130);
+      } else {
+        title.textContent = link.dataset.menuTitle;
+      }
+    };
+    link.addEventListener("mouseenter", showCategory);
+    link.addEventListener("focus", showCategory);
+  });
+}
+
+const siteHeader = document.querySelector(".site-header");
+if (siteHeader) {
+  const updateHeader = () => siteHeader.classList.toggle("is-scrolled", window.scrollY > 24);
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
 }
 
 function setupGallery(items) {
