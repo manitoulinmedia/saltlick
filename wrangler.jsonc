@@ -1,4 +1,4 @@
-// Saltlick static deployment — iPhone text arrows
+// Saltlick static deployment — continuous image footer
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "saltlick",
