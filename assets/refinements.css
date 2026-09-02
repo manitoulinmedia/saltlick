@@ -1,0 +1,177 @@
+/* Final Saltlick visual refinements — keep these rules last in the cascade. */
+
+/* Sticky header: navigation is centred on the actual black 82px bar, not the hanging logo. */
+.site-header .main-nav{
+  height:82px;
+  align-self:center;
+  align-items:center;
+}
+.site-header .main-nav>a,
+.site-header .menu-nav-item{
+  align-self:center;
+}
+.site-header .main-nav>a{
+  line-height:1;
+}
+.site-header .outline-button{
+  align-self:center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1;
+}
+.site-header.is-scrolled .main-nav,
+.site-header.is-scrolled .main-nav>a,
+.site-header.is-scrolled .menu-nav-item,
+.site-header.is-scrolled .outline-button{
+  transform:none;
+  top:auto;
+  bottom:auto;
+}
+
+/* Hero headline: slightly smaller overall, with more authority on SOUTHERN SMOKE. */
+.hero h1{
+  font-size:clamp(54px,7.35vw,116px);
+  line-height:.86;
+}
+.hero h1>span{
+  font-weight:900;
+}
+.hero h1>em{
+  font-weight:600;
+}
+
+/* Use the current Southern Smokehouse mark for section watermarks. */
+.story:before,
+.food:before{
+  background-image:url('/gallery/saltlick-logo-2026.webp');
+}
+
+/* Exceptional Catering is the footer — all restaurant details, brand and socials live on this image. */
+.site-footer{
+  background:#0e0c0a;
+}
+.site-footer .catering{
+  min-height:0;
+  border-bottom:0;
+}
+.site-footer .catering>img{
+  object-position:center 48%;
+}
+.site-footer .catering-shade{
+  background:
+    linear-gradient(90deg,rgba(15,8,5,.94) 0%,rgba(18,9,6,.74) 50%,rgba(15,8,5,.55) 100%),
+    linear-gradient(0deg,rgba(7,5,4,.96) 0%,transparent 46%);
+}
+.catering-layout{
+  min-height:720px;
+  padding-top:100px;
+  padding-bottom:78px;
+}
+.catering-details{
+  background:rgba(15,10,8,.72);
+  border:1px solid rgba(255,255,255,.22);
+  box-shadow:0 22px 55px rgba(0,0,0,.2);
+}
+.catering-details-head{
+  padding:18px 0 20px;
+  border-bottom:1px solid rgba(255,255,255,.17);
+}
+.catering-details-head span{
+  display:block;
+  color:#ef8d68;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.19em;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.catering-details-head h3{
+  margin:0;
+  font:700 clamp(28px,3vw,42px)/1.02 Georgia,serif;
+  letter-spacing:-.025em;
+}
+
+.footer-base{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  grid-template-areas:
+    "brand tagline socials"
+    "credits credits credits";
+  align-items:center;
+  gap:24px 34px;
+  text-align:left;
+  padding:34px clamp(24px,7vw,120px) 28px;
+  margin:0;
+  background:rgba(8,6,5,.48);
+  border-top:1px solid rgba(255,255,255,.16);
+  backdrop-filter:blur(7px);
+}
+.footer-base>img{
+  grid-area:brand;
+  width:92px;
+  height:92px;
+  object-fit:contain;
+  margin:0;
+  filter:drop-shadow(0 5px 14px rgba(0,0,0,.45));
+}
+.footer-base>p{
+  grid-area:tagline;
+  margin:0;
+  font:italic clamp(18px,2vw,25px)/1.25 Georgia,serif;
+  color:#ddd2c8;
+}
+.footer-base .socials{
+  grid-area:socials;
+  justify-content:flex-end;
+  margin:0;
+}
+.footer-base .socials a{
+  width:auto;
+  height:auto;
+  min-height:42px;
+  padding:0 16px;
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  border-color:rgba(255,255,255,.3);
+}
+.footer-base .credits{
+  grid-area:credits;
+  margin-top:8px;
+  padding-top:22px;
+  border-top:1px solid rgba(255,255,255,.14);
+  color:#a89b91;
+}
+
+@media(max-width:900px){
+  .site-header .main-nav{height:72px}
+  .site-header .menu-nav-item{height:72px}
+  .hero h1{font-size:clamp(48px,11.2vw,76px)}
+  .catering-layout{min-height:0;padding:84px 40px 62px}
+  .footer-base{
+    grid-template-columns:92px 1fr;
+    grid-template-areas:
+      "brand tagline"
+      "socials socials"
+      "credits credits";
+  }
+  .footer-base .socials{justify-content:flex-start}
+}
+
+@media(max-width:620px){
+  .hero h1{font-size:clamp(45px,12vw,64px)}
+  .catering-layout{padding:72px 20px 50px}
+  .catering-details-head{padding:16px 0 18px}
+  .footer-base{
+    grid-template-columns:72px 1fr;
+    gap:18px 20px;
+    padding:28px 20px 24px;
+  }
+  .footer-base>img{width:72px;height:72px}
+  .footer-base .socials{gap:8px}
+  .footer-base .socials a{padding:0 12px}
+  .footer-base .credits{display:grid;gap:12px}
+}
