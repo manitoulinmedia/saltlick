@@ -23,7 +23,7 @@ fetch("/content/site.json")
         <h3>${dish.name}</h3><p>${dish.description}</p>
       </article>`).join("");
     document.getElementById("gallery-grid").innerHTML = site.gallery.map((item, index) =>
-      `<button class="gallery-item" type="button" data-index="${index}" aria-label="View ${item.alt}"><img src="${item.image}" alt="${item.alt}"><span>View story ↗</span></button>`).join("");
+      `<button class="gallery-item" type="button" data-index="${index}" aria-label="View ${item.alt}"><img src="${item.image}" alt="${item.alt}"><span>View story ↗︎</span></button>`).join("");
     setupGallery(site.gallery);
     setupMegaMenuImages(site);
   })
