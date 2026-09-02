@@ -26,3 +26,28 @@ fetch("/content/site.json")
       `<img src="${item.image}" alt="${item.alt}">`).join("");
   })
   .catch(() => document.documentElement.classList.add("content-fallback"));
+
+const menuTrigger = document.querySelector(".menu-trigger");
+const megaMenu = document.querySelector(".mega-menu");
+
+if (menuTrigger && megaMenu) {
+  const closeMenu = () => {
+    menuTrigger.setAttribute("aria-expanded", "false");
+    megaMenu.classList.remove("is-open");
+  };
+  menuTrigger.addEventListener("click", () => {
+    const opening = menuTrigger.getAttribute("aria-expanded") !== "true";
+    menuTrigger.setAttribute("aria-expanded", String(opening));
+    megaMenu.classList.toggle("is-open", opening);
+  });
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".menu-nav-item")) closeMenu();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+      menuTrigger.focus();
+    }
+  });
+  megaMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+}
