@@ -1,4 +1,4 @@
-// Saltlick static deployment — visit layout revision 2
+// Saltlick static deployment — iPhone text arrows
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "saltlick",
