@@ -253,3 +253,16 @@
   .mega-links>a:nth-child(5){grid-column:2;grid-row:3}
   .mega-links .mega-all{grid-column:1 / -1;grid-row:4}
 }
+
+
+/* One continuous image footer: brand and credits live inside the catering scene. */
+.site-footer .footer-base{
+  background:transparent;
+  border-top:0;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  padding-top:18px;
+}
+.site-footer .footer-base .credits{
+  border-top-color:rgba(255,255,255,.18);
+}
