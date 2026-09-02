@@ -41,6 +41,7 @@ if (menuTrigger && megaMenu) {
     const opening = menuTrigger.getAttribute("aria-expanded") !== "true";
     menuTrigger.setAttribute("aria-expanded", String(opening));
     megaMenu.classList.toggle("is-open", opening);
+    if (!opening) menuTrigger.blur();
   });
   document.addEventListener("click", (event) => {
     if (!event.target.closest(".menu-nav-item")) closeMenu();
