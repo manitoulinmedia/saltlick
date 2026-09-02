@@ -14,6 +14,12 @@ content:
       - { name: hero_title, label: Hero headline, type: string }
       - { name: hero_accent, label: Hero accent line, type: string }
       - { name: hero_intro, label: Hero introduction, type: text }
+      - { name: mega_menu_default_image, label: Mega menu default image, type: image }
+      - { name: mega_menu_sandwiches_image, label: Mega menu — Sandwiches image, type: image }
+      - { name: mega_menu_platters_image, label: Mega menu — Family platters image, type: image }
+      - { name: mega_menu_build_image, label: Mega menu — Build your own image, type: image }
+      - { name: mega_menu_meats_image, label: Mega menu — Meat by the lb. image, type: image }
+      - { name: mega_menu_sides_image, label: Mega menu — Sides image, type: image }
       - { name: story_heading, label: Story heading, type: string }
       - { name: story_accent, label: Story accent, type: string }
       - { name: story_paragraph_one, label: Story paragraph one, type: text }
