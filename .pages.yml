@@ -51,4 +51,6 @@ content:
         list: true
         fields:
           - { name: image, label: Image, type: image }
-          - { name: alt, label: Image description, type: string }
+          - { name: alt, label: Accessible image description, type: string }
+          - { name: title, label: Lightbox title, type: string }
+          - { name: description, label: Lightbox description, type: text }
