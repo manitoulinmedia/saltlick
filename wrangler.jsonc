@@ -1,4 +1,4 @@
-// Saltlick static deployment — unified visit hero
+// Saltlick static deployment — visit layout revision 2
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "saltlick",
