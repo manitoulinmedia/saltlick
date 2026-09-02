@@ -59,3 +59,31 @@ body.menu-page,body.catering-page,body.visit-page{background:var(--cream)}
 @media(max-width:620px){
   .visit-page .visit-page-hero{height:90svh}
 }
+
+
+/* Visit layout revision: exact shared interior hero geometry. */
+.visit-page .visit-layout-unified{
+  position:relative!important;
+  display:flex!important;
+  grid-template-columns:none!important;
+  width:100%;
+  min-height:720px;
+  height:82svh;
+  align-items:flex-end!important;
+}
+.visit-page .visit-layout-unified>img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:0!important;
+  object-fit:cover!important;
+}
+@media(max-width:620px){
+  .visit-page .visit-layout-unified{min-height:640px;height:90svh}
+  .visit-page .interior-hero-actions{display:grid;grid-template-columns:1fr;width:100%}
+  .visit-page .interior-hero-actions .button{width:100%;min-height:50px}
+  .visit-page .map-copy>div:last-child{display:grid;grid-template-columns:1fr;width:100%}
+  .visit-page .map-copy .button,.visit-page .map-copy .review-photo-link{width:100%;text-align:center}
+  .visit-page .visit-social a i{display:none}
+}
