@@ -16,7 +16,24 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Saltlick Smokehouse home"><img data-image="logo" src="/saltlick-logo-2018.png" alt="Saltlick Smokehouse"></a>
-    <nav aria-label="Main navigation"><a href="#story">Our story</a><a href="#food">The food</a><a href="#catering">Catering</a><a href="#visit">Visit</a></nav>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#story">Our story</a>
+      <div class="menu-nav-item">
+        <button class="menu-trigger" type="button" aria-expanded="false" aria-controls="menu-mega">Menu <span aria-hidden="true">⌄</span></button>
+        <div class="mega-menu" id="menu-mega">
+          <div class="mega-intro"><span>From the smoker</span><strong>Pick your pleasure.</strong><p>House-smoked meats, Southern favourites and family-style spreads made for sharing.</p></div>
+          <div class="mega-links">
+            <a data-link="menu_url" href="#" target="_blank" rel="noreferrer"><span>01</span><div><strong>Sandwiches</strong><small>Brisket, smoked pork, fried chicken &amp; jerk chicken</small></div></a>
+            <a data-link="menu_url" href="#" target="_blank" rel="noreferrer"><span>02</span><div><strong>Family-style platters</strong><small>Cluck &amp; Oink, This Piggy and The Feast</small></div></a>
+            <a data-link="menu_url" href="#" target="_blank" rel="noreferrer"><span>03</span><div><strong>Build your own BBQ</strong><small>Choose your meats, sides and table size</small></div></a>
+            <a data-link="menu_url" href="#" target="_blank" rel="noreferrer"><span>04</span><div><strong>Meat by the lb.</strong><small>Brisket, pork, ribs, chicken and sausage</small></div></a>
+            <a data-link="menu_url" href="#" target="_blank" rel="noreferrer"><span>05</span><div><strong>Sides &amp; extras</strong><small>Mac &amp; cheese, pit beans, slaw, cornbread and more</small></div></a>
+            <a class="mega-all" data-link="menu_url" href="#" target="_blank" rel="noreferrer">View the full menu <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="#catering">Catering</a><a href="#visit">Visit</a>
+    </nav>
     <a class="outline-button" data-link="reserve_url" href="#" target="_blank" rel="noreferrer">Reserve ↗</a>
   </header>
 
