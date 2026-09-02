@@ -22,8 +22,9 @@ fetch("/content/site.json")
         <div class="meta"><b>0${i + 1}</b><span>${dish.eyebrow}</span></div>
         <h3>${dish.name}</h3><p>${dish.description}</p>
       </article>`).join("");
-    document.getElementById("gallery-grid").innerHTML = site.gallery.map((item) =>
-      `<img src="${item.image}" alt="${item.alt}">`).join("");
+    document.getElementById("gallery-grid").innerHTML = site.gallery.map((item, index) =>
+      `<button class="gallery-item" type="button" data-index="${index}" aria-label="View ${item.alt}"><img src="${item.image}" alt="${item.alt}"><span>View story ↗</span></button>`).join("");
+    setupGallery(site.gallery);
   })
   .catch(() => document.documentElement.classList.add("content-fallback"));
 
@@ -50,4 +51,26 @@ if (menuTrigger && megaMenu) {
     }
   });
   megaMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+}
+
+function setupGallery(items) {
+  const dialog = document.getElementById("gallery-lightbox");
+  if (!dialog) return;
+  const image = dialog.querySelector("img");
+  const title = dialog.querySelector("h3");
+  const description = dialog.querySelector("p");
+  document.querySelectorAll(".gallery-item").forEach((item) => {
+    item.addEventListener("click", () => {
+      const photo = items[Number(item.dataset.index)];
+      image.src = photo.image;
+      image.alt = photo.alt;
+      title.textContent = photo.title || photo.alt;
+      description.textContent = photo.description || photo.alt;
+      dialog.showModal();
+    });
+  });
+  dialog.querySelector(".lightbox-close").addEventListener("click", () => dialog.close());
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
 }
