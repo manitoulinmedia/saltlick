@@ -1,0 +1,43 @@
+{
+  "logo": "/saltlick-logo-2018.png",
+  "hero_image": "/hero.jpg",
+  "hero_eyebrow": "Hamilton, Ontario · Est. 2015",
+  "hero_title": "Southern smoke.",
+  "hero_accent": "Hamilton soul.",
+  "hero_intro": "Everything smoked in house. Big platters made for passing. Good times served family style.",
+  "story_heading": "Barbecue tastes better when it’s",
+  "story_accent": "shared.",
+  "story_paragraph_one": "Saltlick is Hamilton’s place for true Southern-style BBQ—personally smoked in house to mouth-watering perfection and served with the kind of hospitality that makes a table feel like home.",
+  "story_paragraph_two": "Owners Kyle and Jennifer Ferreira carry the smokehouse tradition forward with family-style platters. Choose your meats, pass the sides and settle in. This is dinner without the fuss—and with plenty of napkins.",
+  "family_image": "/slide_905139900314521_8714369279583726082_n-copy.jpg",
+  "family_text": "Our dining concept is simple: friends and family choose the meats and sides they want to share, then dig in together. No tiny plates. No stiff rules. Just a table full of food worth talking about.",
+  "catering_image": "/gallery/356795459_3191753444303727_3257160976338832465_n.jpg",
+  "catering_heading": "Bring the smoke",
+  "catering_accent": "to your gathering.",
+  "catering_text": "From a Saltlick menu favourite to a completely custom spread, we cater events of every size. Tell us what you’re planning—we’ll bring the good stuff.",
+  "menu_url": "https://www.saltlick.ca/images/2025/saltlick_menu_2025-revised.pdf",
+  "order_url": "https://order.saltlick.ca/",
+  "reserve_url": "https://www.tbdine.com/book/restaurant/saltlick-smokehouse?idApp=69959&language=en-us",
+  "catering_email": "management@saltlick.ca",
+  "address": "282 James St. N.\nHamilton, Ontario",
+  "map_url": "https://maps.google.com/?q=282+James+Street+North+Hamilton+Ontario",
+  "hours": "Tue–Thu  4–9 p.m.\nFri–Sat  12–10 p.m.\nSun  12–9 p.m.",
+  "phone": "+12893896328",
+  "phone_display": "289-389-MEAT",
+  "instagram_url": "https://www.instagram.com/saltlicksmokehouse/",
+  "facebook_url": "https://www.facebook.com/saltlicksmokehouse/",
+  "footer_tagline": "Good smoke. Good people. No small portions.",
+  "featured_dishes": [
+    {"image":"/38520391_525483971235624_8638898490484719616_n.jpg","eyebrow":"Low & slow","name":"Smoked brisket","description":"Deep bark, a rosy smoke ring and the kind of tenderness that only time can make."},
+    {"image":"/chicken.jpg","eyebrow":"Sweet heat","name":"Fire-kissed chicken","description":"Sticky, smoky and built to share—with just enough heat to keep you reaching back in."},
+    {"image":"/tacos.jpg","eyebrow":"From the pit","name":"Smokehouse tacos","description":"Southern smoke meets bright, fresh toppings in one seriously good handful."}
+  ],
+  "gallery": [
+    {"image":"/gallery/354865508_1303388610603923_2634253508535665457_n.jpg","alt":"Saltlick smoked meat platter"},
+    {"image":"/gallery/356502298_516013247322950_6866060923290351554_n.jpg","alt":"Saltlick barbecue sandwich"},
+    {"image":"/gallery/screen-shot-2022-12-13-at-2-04-09-pm.png","alt":"Glazed smoked ribs"},
+    {"image":"/gallery/screen-shot-2022-12-13-at-2-04-19-pm.png","alt":"Southern fried dish"},
+    {"image":"/gallery/356779709_274361245136444_3397967288871236975_n.jpg","alt":"House-smoked barbecue plate"},
+    {"image":"/gallery/356567713_785151919654019_2066482117884599501_n.jpg","alt":"Saltlick family-style spread"}
+  ]
+}
