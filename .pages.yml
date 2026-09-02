@@ -60,3 +60,36 @@ content:
           - { name: alt, label: Accessible image description, type: string }
           - { name: title, label: Lightbox title, type: string }
           - { name: description, label: Lightbox description, type: text }
+
+      - { name: menu_page_image, label: Menu page hero image, type: image }
+      - { name: menu_intro, label: Menu page introduction, type: text }
+      - { name: menu_note, label: Menu page note, type: text }
+      - name: menu_sections
+        label: Menu sections
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Section name, type: string }
+          - { name: description, label: Section introduction, type: text }
+          - name: items
+            label: Menu items
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Item name, type: string }
+              - { name: description, label: Description, type: text }
+              - { name: price, label: Price, type: string }
+      - { name: catering_page_intro, label: Catering page introduction, type: text }
+      - { name: catering_page_text, label: Catering page main text, type: text }
+      - { name: catering_minimum, label: Catering pricing note, type: text }
+      - name: catering_options
+        label: Catering options
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Option name, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: note, label: Small note, type: string }
+      - { name: visit_page_image, label: Visit page image, type: image }
+      - { name: visit_intro, label: Visit page introduction, type: text }
+      - { name: directions_url, label: Google directions URL, type: string }
