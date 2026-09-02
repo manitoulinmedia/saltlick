@@ -50,27 +50,39 @@
   "gallery": [
     {
       "image": "/gallery/354865508_1303388610603923_2634253508535665457_n.jpg",
-      "alt": "Saltlick smoked meat platter"
+      "alt": "Saltlick smoked meat platter",
+      "title": "Straight from the smoker",
+      "description": "A full Saltlick spread built around house-smoked meats, bold sides and plenty to pass around the table."
     },
     {
       "image": "/gallery/356502298_516013247322950_6866060923290351554_n.jpg",
-      "alt": "Saltlick barbecue sandwich"
+      "alt": "Saltlick barbecue sandwich",
+      "title": "Smokehouse stacked",
+      "description": "Tender smoked meat, bright toppings and house sauce piled into a sandwich that requires both hands."
     },
     {
       "image": "/gallery/screen-shot-2022-12-13-at-2-04-09-pm.png",
-      "alt": "Glazed smoked ribs"
+      "alt": "Glazed smoked ribs",
+      "title": "Low, slow and sticky",
+      "description": "Pork ribs smoked until tender, finished with a glossy glaze and served ready to pull apart."
     },
     {
       "image": "/gallery/screen-shot-2022-12-13-at-2-04-19-pm.png",
-      "alt": "Southern fried dish"
+      "alt": "Southern fried dish",
+      "title": "Southern comfort",
+      "description": "Crisp, golden and deeply satisfying—the kind of Southern favourite that disappears fast."
     },
     {
       "image": "/gallery/356779709_274361245136444_3397967288871236975_n.jpg",
-      "alt": "House-smoked barbecue plate"
+      "alt": "House-smoked barbecue plate",
+      "title": "The whole plate",
+      "description": "House-smoked barbecue with the sides that make it a meal, prepared without shortcuts."
     },
     {
       "image": "/gallery/356567713_785151919654019_2066482117884599501_n.jpg",
-      "alt": "Saltlick family-style spread"
+      "alt": "Saltlick family-style spread",
+      "title": "Made to be shared",
+      "description": "Meats and sides served family style, because barbecue tastes better when everyone digs in together."
     }
   ]
 }
