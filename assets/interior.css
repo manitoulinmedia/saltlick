@@ -26,3 +26,36 @@ body.menu-page,body.catering-page,body.visit-page{background:var(--cream)}
  .mobile-page-nav a{display:flex;align-items:center;justify-content:space-between;min-height:52px;border-bottom:1px solid rgba(255,255,255,.13);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
  .interior-header .nav-left{visibility:hidden}.interior-header .nav-right>a:not(.outline-button){display:none}
 }
+
+
+/* Match the Visit hero to the Menu and Catering page layout. */
+.visit-page .visit-page-hero{
+  position:relative;
+  min-height:720px;
+  height:82svh;
+  display:flex;
+  grid-template-columns:none;
+  align-items:flex-end;
+  overflow:hidden;
+  background:#21150f;
+}
+.visit-page .visit-page-hero>img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  min-height:0;
+  object-fit:cover;
+  object-position:center 52%;
+}
+.visit-page .visit-page-hero .interior-hero-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+@media(max-width:900px){
+  .visit-page .visit-page-hero{min-height:660px}
+}
+@media(max-width:620px){
+  .visit-page .visit-page-hero{height:90svh}
+}
