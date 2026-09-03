@@ -143,3 +143,87 @@ body.menu-page,body.catering-page,body.visit-page{background:var(--cream)}
  .menu-page .menu-page-content::before{position:fixed;top:52%;width:115vw;opacity:.028}
  .menu-page .menu-items p{font-size:13px;line-height:1.5;margin-top:7px}
 }
+
+/* Print-menu composition brought to the editable website menu. */
+.menu-page .menu-poster-hero{
+ position:relative;min-height:620px;height:min(760px,78svh);overflow:hidden;color:#fff;background:#17100c;
+ display:flex;align-items:flex-end;
+}
+.menu-page .menu-poster-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%;filter:saturate(.9) contrast(1.08)}
+.menu-poster-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,4,2,.88),rgba(10,5,3,.58) 56%,rgba(8,4,2,.74)),linear-gradient(0deg,rgba(7,3,2,.86),transparent 62%)}
+.menu-poster-masthead{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(390px,.78fr);gap:clamp(45px,7vw,120px);align-items:center;padding:145px clamp(28px,7vw,120px) 72px}
+.menu-poster-title>span{display:block;color:#ff9a73;font-size:11px;font-weight:900;letter-spacing:.21em;text-transform:uppercase;margin-bottom:25px}
+.menu-poster-title h1{margin:0;line-height:.78;text-transform:none}
+.menu-poster-title h1 em{display:block;font:600 italic clamp(62px,7vw,110px)/.9 "Playfair Display",Georgia,serif;color:#fff8ec;letter-spacing:-.045em}
+.menu-poster-title h1 strong{display:block;margin-top:12px;font:900 clamp(105px,12vw,190px)/.72 "DM Sans",Arial,sans-serif;letter-spacing:-.075em;text-transform:uppercase;color:#f05224}
+.menu-poster-title>p{max-width:650px;margin:35px 0 0;color:#eee3d8;font-size:17px;line-height:1.6}
+.menu-order-button{margin-top:26px}
+.menu-house-creed{position:relative;max-width:610px;justify-self:end;width:100%;padding:5px;background:#f05224;clip-path:polygon(7% 0,93% 0,100% 13%,100% 87%,93% 100%,7% 100%,0 87%,0 13%);transform:rotate(-1deg);filter:drop-shadow(0 18px 28px rgba(0,0,0,.32))}
+.menu-house-creed-inner{position:relative;padding:42px 36px 38px;background:rgba(10,5,3,.92);clip-path:polygon(6% 0,94% 0,100% 12%,100% 88%,94% 100%,6% 100%,0 88%,0 12%);text-align:center}
+.menu-house-creed-inner>span{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;color:#f05224;font-size:10px;font-weight:900;letter-spacing:.22em;text-transform:uppercase;margin-bottom:27px}
+.menu-house-creed-inner>span i{display:block;height:3px;background:#f05224}
+.menu-house-creed-inner strong{display:block;font:900 clamp(38px,4.2vw,68px)/.92 "DM Sans",Arial,sans-serif;letter-spacing:-.055em;text-transform:uppercase;color:#fff8ec;white-space:nowrap}
+.menu-house-creed-inner b{display:block;margin-top:16px;padding:13px 16px 15px;background:#f05224;color:#160805;font:900 clamp(34px,3.7vw,60px)/.9 "DM Sans",Arial,sans-serif;letter-spacing:-.045em;text-transform:uppercase;white-space:nowrap}
+
+.menu-page .page-jump-nav{top:76px;justify-content:center;background:#17120f;color:#eee3d8;border-color:#ffffff24;box-shadow:0 12px 32px rgba(0,0,0,.18)}
+.menu-page .page-jump-nav a{border-color:#ffffff1f;padding:19px 22px}
+.menu-page .page-jump-nav a:hover{background:#f05224;color:#fff}
+.menu-page .menu-page-content{
+ --menu-page-photo:url("/gallery/354865508_1303388610603923_2634253508535665457_n.jpg");
+ isolation:isolate;position:relative;overflow:hidden;padding:0 clamp(28px,7vw,120px) 120px;background-color:#130d09;
+ background-image:linear-gradient(rgba(10,5,3,.84),rgba(10,5,3,.9)),var(--menu-page-photo);
+ background-position:center;background-size:cover;background-attachment:scroll,fixed;color:#fff8ec;
+}
+.menu-page .menu-page-content::before{content:"";position:absolute;z-index:0;right:-9vw;bottom:10%;left:auto;top:auto;width:min(70vw,1100px);aspect-ratio:1;transform:none;background:url("/saltlick-logo-kitchen-2026.svg") center/contain no-repeat;opacity:.045;pointer-events:none}
+.menu-page .menu-page-content::after{content:"";position:absolute;z-index:0;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.1),transparent 40%,rgba(0,0,0,.12));pointer-events:none}
+.menu-page .menu-page-content>*,.menu-page #menu-sections{position:relative;z-index:1}
+.menu-poster-note{display:flex;justify-content:space-between;align-items:center;gap:50px;padding:34px 0;border-bottom:1px solid #ffffff2b;color:#cdbfb3}
+.menu-poster-note>span{flex:0 0 auto;color:#f4784f;font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}
+.menu-poster-note>p{max-width:760px;margin:0;font-size:14px;line-height:1.65;text-align:right}
+.menu-page #menu-sections{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(290px,.9fr);grid-template-areas:"meat meat comforts" "sides sides dessert" "plates plates cook";column-gap:0;align-items:stretch}
+.menu-page #meat-3{grid-area:meat}.menu-page #southern-comforts{grid-area:comforts}.menu-page #sides{grid-area:sides}.menu-page #dessert{grid-area:dessert}.menu-page #full-plates{grid-area:plates}.menu-page #let-him-cook{grid-area:cook}
+.menu-page .menu-category{display:block;scroll-margin-top:148px;padding:65px 0 72px;border-bottom:1px solid #ffffff20;overflow:visible}
+.menu-page .menu-category::after{display:none}
+.menu-page #meat-3,.menu-page #sides,.menu-page #full-plates{padding-right:48px}
+.menu-page #southern-comforts,.menu-page #dessert,.menu-page #let-him-cook{padding-left:48px;border-left:1px solid #ffffff22}
+.menu-page .menu-category header{display:block;margin:0 0 28px}
+.menu-page .menu-category header>span{display:block;color:#f4784f;font-size:11px;font-weight:900;letter-spacing:.2em;margin-bottom:14px}
+.menu-page .menu-category h2{margin:0;color:#fff8ec;font:900 clamp(38px,4vw,66px)/.9 "DM Sans",Arial,sans-serif;letter-spacing:-.055em;text-transform:uppercase}
+.menu-page .menu-category header p{max-width:700px;margin:13px 0 0;color:#c9bbb0;font-size:14px;line-height:1.55}
+.menu-page .menu-items{display:grid;grid-template-columns:1fr;border-top:4px solid #f05224;column-gap:38px}
+.menu-page #meat-3 .menu-items,.menu-page #sides .menu-items,.menu-page #full-plates .menu-items{grid-template-columns:repeat(2,minmax(0,1fr))}
+.menu-page .menu-items article,.menu-page .menu-items article.has-price{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-column:auto;align-items:start;gap:16px;min-height:0;padding:21px 0;border-color:#ffffff22}
+.menu-page .menu-items h3{margin:0;color:#fff;font:900 21px/1.12 "DM Sans",Arial,sans-serif;letter-spacing:-.025em}
+.menu-page .menu-items p{max-width:600px;margin:7px 0 0;color:#c3b5aa;font-size:14px;line-height:1.45}
+.menu-page .menu-items strong{color:#ff7b51;font-size:14px;line-height:1.35;text-align:right;white-space:nowrap}
+.menu-page #meat-3 h2{font-size:clamp(46px,5vw,82px)}
+.menu-page #meat-3 header p{font-size:16px;font-weight:700;color:#eee1d5}
+.menu-page #let-him-cook .menu-items{border-top-color:#fff8ec}
+
+@media(max-width:1050px){
+ .menu-poster-masthead{grid-template-columns:minmax(0,1fr) minmax(330px,.8fr);gap:45px}
+ .menu-page #menu-sections{grid-template-columns:1fr 1fr;grid-template-areas:"meat meat" "comforts dessert" "sides sides" "plates plates" "cook cook"}
+ .menu-page #southern-comforts,.menu-page #dessert,.menu-page #let-him-cook{border-left:0;padding-left:0}
+ .menu-page #southern-comforts{padding-right:32px}.menu-page #dessert{padding-left:32px;border-left:1px solid #ffffff22}
+ .menu-page #let-him-cook .menu-items{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ .menu-page .menu-poster-hero{height:auto;min-height:760px}
+ .menu-poster-masthead{grid-template-columns:1fr;gap:48px;padding:135px 22px 60px}
+ .menu-poster-title h1 strong{font-size:clamp(92px,24vw,150px)}
+ .menu-poster-title>p{font-size:15px;margin-top:28px}
+ .menu-house-creed{justify-self:start;max-width:540px}
+ .menu-page .page-jump-nav{top:72px;justify-content:flex-start}
+ .menu-page .menu-page-content{padding:0 22px 85px;background-attachment:scroll;background-size:auto 900px;background-repeat:repeat-y}
+ .menu-poster-note{display:block;padding:28px 0}.menu-poster-note>p{margin-top:12px;text-align:left}
+ .menu-page #menu-sections{display:block}
+ .menu-page .menu-category,.menu-page #meat-3,.menu-page #sides,.menu-page #full-plates,.menu-page #southern-comforts,.menu-page #dessert,.menu-page #let-him-cook{padding:54px 0 60px;border-left:0}
+ .menu-page .menu-page-content::before{position:absolute;right:-45vw;bottom:6%;width:130vw;opacity:.035}
+}
+@media(max-width:560px){
+ .menu-house-creed-inner{padding:32px 22px 29px}
+ .menu-house-creed-inner strong{font-size:clamp(31px,9vw,46px)}
+ .menu-house-creed-inner b{font-size:clamp(29px,8vw,42px)}
+ .menu-page #meat-3 .menu-items,.menu-page #sides .menu-items,.menu-page #full-plates .menu-items,.menu-page #let-him-cook .menu-items{grid-template-columns:1fr}
+ .menu-page .menu-items article,.menu-page .menu-items article.has-price{padding:18px 0}
+}
