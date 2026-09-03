@@ -160,27 +160,27 @@
       "items": [
         {
           "name": "Catfish Nuggets",
-          "description": "",
+          "description": "Crisp, golden bites of catfish with a tender centre.",
           "price": ""
         },
         {
           "name": "Hush Puppies",
-          "description": "",
+          "description": "Cornmeal fritters, fried golden and served hot.",
           "price": ""
         },
         {
           "name": "Pork Belly Nuggets",
-          "description": "",
+          "description": "Crispy-edged, smoky pork belly bites.",
           "price": ""
         },
         {
           "name": "Tacos",
-          "description": "",
+          "description": "A rotating Southern-inspired taco from the kitchen.",
           "price": ""
         },
         {
           "name": "Blackened Shrimp Cocktail",
-          "description": "",
+          "description": "Blackened shrimp with a cool, tangy cocktail finish.",
           "price": ""
         }
       ]
@@ -191,42 +191,42 @@
       "items": [
         {
           "name": "Southern Fried Chicken",
-          "description": "",
+          "description": "Buttermilk-brined, seasoned and fried crisp.",
           "price": ""
         },
         {
           "name": "Nashville Hot Chicken",
-          "description": "",
+          "description": "Fried chicken finished with bold Nashville heat.",
           "price": ""
         },
         {
           "name": "Jerk Chicken",
-          "description": "",
+          "description": "Caribbean-spiced chicken with smoke and heat.",
           "price": ""
         },
         {
           "name": "Pulled Pork",
-          "description": "",
+          "description": "Low-and-slow pork, pulled tender and smoky.",
           "price": ""
         },
         {
           "name": "Southern Fried Pork Belly",
-          "description": "",
+          "description": "Crisp-fried pork belly with rich, tender layers.",
           "price": ""
         },
         {
           "name": "Ribs",
-          "description": "",
+          "description": "Slow-smoked until tender with deep barbecue flavour.",
           "price": ""
         },
         {
           "name": "Brisket",
-          "description": "",
+          "description": "House-smoked beef brisket with bark and a rosy smoke ring.",
           "price": ""
         },
         {
           "name": "Fried Catfish",
-          "description": "",
+          "description": "Seasoned catfish with a crisp golden crust.",
           "price": ""
         }
       ]
@@ -237,47 +237,47 @@
       "items": [
         {
           "name": "Mashed Potatoes",
-          "description": "",
+          "description": "Creamy, comforting and made for gravy.",
           "price": ""
         },
         {
           "name": "Grits",
-          "description": "",
+          "description": "Slow-cooked Southern-style corn grits.",
           "price": ""
         },
         {
           "name": "Pit Beans",
-          "description": "",
+          "description": "Smoky beans simmered low and slow.",
           "price": ""
         },
         {
           "name": "Mac & Cheese",
-          "description": "",
+          "description": "Creamy, cheesy and baked for comfort.",
           "price": ""
         },
         {
           "name": "Slaw",
-          "description": "",
+          "description": "Cool, crisp and made to cut through the smoke.",
           "price": ""
         },
         {
           "name": "Hush Puppies",
-          "description": "",
+          "description": "Cornmeal fritters, fried golden and served hot.",
           "price": ""
         },
         {
           "name": "Cornbread",
-          "description": "",
+          "description": "House-baked, lightly sweet Southern cornbread.",
           "price": ""
         },
         {
           "name": "Buttermilk Biscuit",
-          "description": "",
+          "description": "Flaky, tender and baked golden.",
           "price": ""
         },
         {
           "name": "Seasonal Vegetables",
-          "description": "",
+          "description": "Fresh vegetables prepared the kitchen’s way.",
           "price": ""
         }
       ]
@@ -288,17 +288,17 @@
       "items": [
         {
           "name": "Shrimp & Grits",
-          "description": "Served with a buttermilk biscuit.",
+          "description": "Blackened shrimp over creamy grits with a buttermilk biscuit.",
           "price": ""
         },
         {
           "name": "Jambalaya",
-          "description": "Chicken and sausage. Add shrimp.",
+          "description": "Chicken and sausage in a bold Southern rice dish. Add shrimp.",
           "price": ""
         },
         {
           "name": "Southern Fried Steak",
-          "description": "Mashed potatoes, country gravy and seasonal vegetables.",
+          "description": "Crisp fried steak with mashed potatoes, country gravy and seasonal vegetables.",
           "price": ""
         }
       ]
@@ -309,17 +309,17 @@
       "items": [
         {
           "name": "Family-Style Platter",
-          "description": "Chef’s choice of meats and sides for the whole table.",
+          "description": "Chef’s choice of meats and sides, served for the whole table.",
           "price": ""
         },
         {
           "name": "4 Meats · 4 Sides",
-          "description": "Served family style.",
+          "description": "Four meats and four sides, served family style.",
           "price": "$44 per person"
         },
         {
           "name": "5 Meats · 5 Sides",
-          "description": "Served family style.",
+          "description": "Five meats and five sides, served family style.",
           "price": "$55 per person"
         }
       ]
@@ -330,17 +330,17 @@
       "items": [
         {
           "name": "Banana Pudding",
-          "description": "",
+          "description": "Creamy banana pudding with classic Southern comfort.",
           "price": ""
         },
         {
           "name": "Cobbler",
-          "description": "",
+          "description": "Warm fruit cobbler with a golden baked topping.",
           "price": ""
         },
         {
           "name": "Lemon Curd",
-          "description": "",
+          "description": "Bright, smooth lemon curd with a sweet-tart finish.",
           "price": ""
         }
       ]

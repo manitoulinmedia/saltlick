@@ -129,3 +129,17 @@ body.menu-page,body.catering-page,body.visit-page{background:var(--cream)}
  .menu-page .menu-items h3{font-size:20px}
  .menu-page .menu-category::after{display:none}
 }
+
+
+/* Menu logo watermark */
+.menu-page .menu-page-content{isolation:isolate;overflow:hidden}
+.menu-page .menu-page-content::before{
+ content:"";position:absolute;z-index:0;left:50%;top:36%;width:min(82vw,1250px);aspect-ratio:1;
+ transform:translate(-50%,-50%);background:url("/saltlick-logo-kitchen-2026.svg") center/contain no-repeat;
+ opacity:.035;pointer-events:none;
+}
+.menu-page .menu-page-content>*,.menu-page #menu-sections{position:relative;z-index:1}
+@media(max-width:620px){
+ .menu-page .menu-page-content::before{position:fixed;top:52%;width:115vw;opacity:.028}
+ .menu-page .menu-items p{font-size:13px;line-height:1.5;margin-top:7px}
+}
