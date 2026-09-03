@@ -128,8 +128,8 @@
   "mega_menu_meats_image": "/gallery/356779709_274361245136444_3397967288871236975_n.jpg",
   "mega_menu_sides_image": "/gallery/screen-shot-2022-12-13-at-2-04-19-pm.png",
   "menu_page_image": "/gallery/354865508_1303388610603923_2634253508535665457_n.jpg",
-  "menu_intro": "House-smoked meats, family-style platters and Southern sides made for passing around the table.",
-  "menu_note": "Menus and availability can change. Ask your server about today’s specials, dietary needs and the best way to build a spread for your table.",
+  "menu_intro": "Southern comfort, house-smoked meats and full plates made for passing around the table.",
+  "menu_note": "Dinner menu. Availability may change with the smoker and the season. Ask your server about tonight’s features, dietary needs and add-ons.",
   "visit_page_image": "/gallery/356567713_785151919654019_2066482117884599501_n.jpg",
   "visit_intro": "Southern barbecue on James Street North. Come for the smoke, stay for the platter and bring people who don’t mind sharing.",
   "directions_url": "https://www.google.com/maps/dir/?api=1&destination=282+James+Street+North+Hamilton+Ontario",
@@ -155,192 +155,192 @@
   ],
   "menu_sections": [
     {
-      "name": "Sandwiches",
-      "description": "Available in small or large. Add a side for $5.",
+      "name": "Southern Comforts",
+      "description": "Start with something crispy, smoky or made for sharing.",
       "items": [
+        {
+          "name": "Catfish Nuggets",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Hush Puppies",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Pork Belly Nuggets",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Tacos",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Blackened Shrimp Cocktail",
+          "description": "",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "name": "Meat & 3",
+      "description": "Choose your meat and pair it with three Southern sides.",
+      "items": [
+        {
+          "name": "Southern Fried Chicken",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Nashville Hot Chicken",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Jerk Chicken",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Pulled Pork",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Southern Fried Pork Belly",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Ribs",
+          "description": "",
+          "price": ""
+        },
         {
           "name": "Brisket",
-          "description": "Brisket with house BBQ sauce, spicy mayo, crispy onions and mixed greens.",
-          "price": "SM $12.50 · LG $17"
-        },
-        {
-          "name": "Smoked pork",
-          "description": "Smoked pork, house BBQ sauce, spicy mayo, crispy onions and mixed greens.",
-          "price": "SM $11.50 · LG $16"
-        },
-        {
-          "name": "Fried chicken",
-          "description": "Fried chicken, spicy mayo, house pickles and mixed greens.",
-          "price": "SM $11.50 · LG $16"
-        },
-        {
-          "name": "Jerk chicken",
-          "description": "Jerk chicken, spicy mayo, pineapple salsa and mixed greens.",
-          "price": "SM $11.50 · LG $16"
-        }
-      ]
-    },
-    {
-      "name": "Lunch platters",
-      "description": "Priced and portioned per person.",
-      "items": [
-        {
-          "name": "1 meat and 2 sides",
-          "description": "Choose one smoked meat and two Southern sides.",
-          "price": "$18 / person"
-        },
-        {
-          "name": "2 meats and 2 sides",
-          "description": "Choose two smoked meats and two Southern sides.",
-          "price": "$28.50 / person"
-        }
-      ]
-    },
-    {
-      "name": "Family-style platters",
-      "description": "Built for sharing around the table.",
-      "items": [
-        {
-          "name": "Cluck and Oink",
-          "description": "Southern fried chicken, BBQ pork ribs, roasted potatoes, slaw and house-baked cornbread.",
-          "price": "2 ppl $56 · 4 ppl $112"
-        },
-        {
-          "name": "This Piggy Went to Market",
-          "description": "Smoked pork ribs, smoked pork shoulder, roasted potatoes, slaw and house-baked cornbread.",
-          "price": "2 ppl $52 · 4 ppl $104"
-        },
-        {
-          "name": "I Feel Like Chicken Tonight",
-          "description": "Southern fried chicken drumsticks, jerk chicken thighs, roasted potatoes, slaw and house-baked cornbread.",
-          "price": "2 ppl $52 · 4 ppl $104"
-        },
-        {
-          "name": "The Feast",
-          "description": "Smoked pork shoulder, brisket, fried chicken, ribs, jerk chicken, sausage, cornbread, slaw, brisket mac & cheese and BBQ sauce.",
-          "price": "2 ppl $125 · 4 ppl $240"
-        }
-      ]
-    },
-    {
-      "name": "Build your own BBQ",
-      "description": "Choose your meats and sides. Priced per person.",
-      "items": [
-        {
-          "name": "3 meats",
-          "description": "Pick three meats and your choice of sides.",
-          "price": "$36.50 / person"
-        },
-        {
-          "name": "4 meats",
-          "description": "Pick four meats and your choice of sides.",
-          "price": "$44.50 / person"
-        },
-        {
-          "name": "5 meats",
-          "description": "Pick five meats and your choice of sides.",
-          "price": "$52.50 / person"
-        },
-        {
-          "name": "Meat choices",
-          "description": "Southern fried chicken, Nashville chicken, jerk chicken, beef brisket, smoked pork, pork ribs, pork belly nuggets and sausage.",
+          "description": "",
           "price": ""
         },
         {
-          "name": "Side choices",
-          "description": "Brisket mac & cheese, spicy pit beans, slaw, roasted potatoes, cornbread, house salad, popcorn grits, Hot Mess and seasonal vegetable.",
+          "name": "Fried Catfish",
+          "description": "",
           "price": ""
-        }
-      ]
-    },
-    {
-      "name": "Meat by the lb. or piece",
-      "description": "Add to the table or build your own spread at home.",
-      "items": [
-        {
-          "name": "Sliced smoked brisket",
-          "description": "House-smoked and sliced.",
-          "price": "$33 / lb"
-        },
-        {
-          "name": "Smoked pork shoulder",
-          "description": "Tender smoked pork shoulder.",
-          "price": "$18 / lb"
-        },
-        {
-          "name": "Pork ribs",
-          "description": "Full or half rack.",
-          "price": "Half $20 · Full $35"
-        },
-        {
-          "name": "Pork belly nuggets",
-          "description": "Eight pieces.",
-          "price": "$18.50"
-        },
-        {
-          "name": "Southern fried chicken",
-          "description": "Two pieces.",
-          "price": "$9"
-        },
-        {
-          "name": "Nashville hot chicken",
-          "description": "Two pieces.",
-          "price": "$9"
-        },
-        {
-          "name": "Jerk chicken",
-          "description": "Two pieces.",
-          "price": "$9"
         }
       ]
     },
     {
       "name": "Sides",
-      "description": "Southern comfort by the scoop.",
+      "description": "The comfort part of Southern comfort food.",
       "items": [
         {
-          "name": "Brisket mac & cheese",
-          "description": "Creamy mac and cheese with smoked brisket.",
-          "price": "SM $6.50 · LG $16.50"
+          "name": "Mashed Potatoes",
+          "description": "",
+          "price": ""
         },
         {
-          "name": "Spicy pit beans",
-          "description": "Slow-cooked smokehouse beans.",
+          "name": "Grits",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Pit Beans",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Mac & Cheese",
+          "description": "",
           "price": ""
         },
         {
           "name": "Slaw",
-          "description": "Cool, crisp and made for barbecue.",
+          "description": "",
           "price": ""
         },
         {
-          "name": "Roasted potatoes",
-          "description": "Seasoned and roasted.",
+          "name": "Hush Puppies",
+          "description": "",
           "price": ""
         },
         {
           "name": "Cornbread",
-          "description": "House-baked Southern cornbread.",
+          "description": "",
           "price": ""
         },
         {
-          "name": "House salad",
-          "description": "Fresh mixed house salad.",
+          "name": "Buttermilk Biscuit",
+          "description": "",
           "price": ""
         },
         {
-          "name": "Popcorn grits",
-          "description": "A Saltlick favourite.",
+          "name": "Seasonal Vegetables",
+          "description": "",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "name": "Full Plates",
+      "description": "Big Southern plates, served complete.",
+      "items": [
+        {
+          "name": "Shrimp & Grits",
+          "description": "Served with a buttermilk biscuit.",
           "price": ""
         },
         {
-          "name": "Hot Mess",
-          "description": "Ask us what makes it messy.",
+          "name": "Jambalaya",
+          "description": "Chicken and sausage. Add shrimp.",
           "price": ""
         },
         {
-          "name": "Seasonal vegetable",
-          "description": "Fresh seasonal preparation.",
+          "name": "Southern Fried Steak",
+          "description": "Mashed potatoes, country gravy and seasonal vegetables.",
+          "price": ""
+        }
+      ]
+    },
+    {
+      "name": "Let Him Cook",
+      "description": "Give the kitchen the reins and let the table eat family style.",
+      "items": [
+        {
+          "name": "Family-Style Platter",
+          "description": "Chef’s choice of meats and sides for the whole table.",
+          "price": ""
+        },
+        {
+          "name": "4 Meats · 4 Sides",
+          "description": "Served family style.",
+          "price": "$44 per person"
+        },
+        {
+          "name": "5 Meats · 5 Sides",
+          "description": "Served family style.",
+          "price": "$55 per person"
+        }
+      ]
+    },
+    {
+      "name": "Dessert",
+      "description": "Save room. You’ll be glad you did.",
+      "items": [
+        {
+          "name": "Banana Pudding",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Cobbler",
+          "description": "",
+          "price": ""
+        },
+        {
+          "name": "Lemon Curd",
+          "description": "",
           "price": ""
         }
       ]
