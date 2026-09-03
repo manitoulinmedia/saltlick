@@ -128,8 +128,8 @@
   "mega_menu_meats_image": "/gallery/356779709_274361245136444_3397967288871236975_n.jpg",
   "mega_menu_sides_image": "/gallery/screen-shot-2022-12-13-at-2-04-19-pm.png",
   "menu_page_image": "/gallery/354865508_1303388610603923_2634253508535665457_n.jpg",
-  "menu_intro": "Southern comfort, house-smoked meats and full plates made for passing around the table.",
-  "menu_note": "Dinner menu. Availability may change with the smoker and the season. Ask your server about tonight’s features, dietary needs and add-ons.",
+  "menu_intro": "Southern classics, individual Meat & 3 plates and full spreads made without shortcuts.",
+  "menu_note": "Availability may change with the smoker and the season. Ask your server about individual Meat & 3 prices, tonight’s features, dietary needs and add-ons.",
   "visit_page_image": "/gallery/356567713_785151919654019_2066482117884599501_n.jpg",
   "visit_intro": "Southern barbecue on James Street North. Come for the smoke, stay for the platter and bring people who don’t mind sharing.",
   "directions_url": "https://www.google.com/maps/dir/?api=1&destination=282+James+Street+North+Hamilton+Ontario",
@@ -187,7 +187,7 @@
     },
     {
       "name": "Meat & 3",
-      "description": "Choose your meat and pair it with three Southern sides.",
+      "description": "Choose one meat and any three Southern sides. Each selection is an individual plate, priced by meat.",
       "items": [
         {
           "name": "Southern Fried Chicken",
