@@ -227,3 +227,27 @@ body.menu-page,body.catering-page,body.visit-page{background:var(--cream)}
  .menu-page #meat-3 .menu-items,.menu-page #sides .menu-items,.menu-page #full-plates .menu-items,.menu-page #let-him-cook .menu-items{grid-template-columns:1fr}
  .menu-page .menu-items article,.menu-page .menu-items article.has-price{padding:18px 0}
 }
+
+/* Shared, deliberately visible parallax for Menu, Catering and Visit heroes. */
+.interior-hero.parallax-hero>img,
+.menu-poster-hero.parallax-hero>img,
+.visit-page .visit-layout-unified.parallax-hero>img{
+  inset:auto 0!important;
+  top:-12%!important;
+  bottom:auto!important;
+  width:100%!important;
+  height:124%!important;
+  min-height:0!important;
+  transform:translate3d(0,var(--hero-parallax-y,0px),0) scale(1.015);
+  will-change:transform;
+}
+@media(prefers-reduced-motion:reduce){
+  .interior-hero.parallax-hero>img,
+  .menu-poster-hero.parallax-hero>img,
+  .visit-page .visit-layout-unified.parallax-hero>img{
+    top:0!important;
+    height:100%!important;
+    transform:none!important;
+    will-change:auto;
+  }
+}

@@ -107,3 +107,32 @@ function setupGallery(items) {
     if (event.target === dialog) dialog.close();
   });
 }
+
+function setupHeroParallax() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const heroes = [...document.querySelectorAll(".hero")].filter((hero) => hero.querySelector(":scope > img"));
+  if (!heroes.length) return;
+  heroes.forEach((hero) => hero.classList.add("parallax-hero"));
+  let queued = false;
+  const paint = () => {
+    queued = false;
+    heroes.forEach((hero) => {
+      const rect = hero.getBoundingClientRect();
+      if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+      const limit = Math.min(110, rect.height * 0.14);
+      const shift = Math.max(-limit, Math.min(limit, -rect.top * 0.28));
+      hero.style.setProperty("--hero-parallax-y", `${shift.toFixed(1)}px`);
+    });
+  };
+  const queuePaint = () => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(paint);
+  };
+  paint();
+  addEventListener("scroll", queuePaint, { passive: true });
+  addEventListener("resize", queuePaint, { passive: true });
+  addEventListener("pageshow", queuePaint);
+}
+
+setupHeroParallax();
